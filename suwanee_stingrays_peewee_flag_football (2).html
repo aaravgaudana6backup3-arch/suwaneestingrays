@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suwanee Stingrays Flag Football</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #1f4fd8;
+      --gray: #6b7280;
+      --black: #0f172a;
+      --light-gray: #f3f4f6;
+      --white: #ffffff;
+      --accent-light: #dbeafe;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Oswald', 'Anton', sans-serif;
+    }
+
+    body {
+      background-color: var(--light-gray);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    .section-image {
+      display: block;
+      margin: 0 auto 1.5rem auto; /* centers and adds bottom spacing */
+      max-width: 600px;           /* adjust size as needed */
+      height: auto;
+      border-radius: 12px;        /* optional rounded corners */
+    }
+
+
+    header {
+      background: linear-gradient(135deg, var(--blue), var(--black));
+      color: var(--white);
+      padding: 4rem 1.5rem;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    header img.logo {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e5e7eb;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: var(--white);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 1.2rem;
+    }
+
+    nav a {
+      display: block;
+      padding: 1rem 0;
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 500;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 2.5rem;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 35px rgba(0,0,0,0.15);
+    }
+
+    .accent-block {
+      width: 100%;
+      height: 120px;
+      background: var(--accent-light);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--blue);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      color: var(--blue);
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      border-bottom: 3px solid var(--blue);
+      display: inline-block;
+      padding-bottom: 0.2rem;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    p, li {
+      margin-bottom: 1rem;
+      color: #1f2937;
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: var(--blue);
+      color: var(--white);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .cta a:hover {
+      background-color: #163db3;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: var(--black);
+      color: #9ca3af;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Suwanee Stingrays Logo" class="logo">
+    <h1>Suwanee Stingrays</h1>
+    <p>Co-ed Peewee Flag Football • Ages 8–11</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#safety">Safety</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#interest">Interest Form</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <img src="namespace.png" alt="Team Logo or Graphic" class="section-image">
+      <h2>About Us</h2>
+      <p>
+        We’re a group of students from the Suwanee area who love football and want
+        to share that excitement with younger kids in our community. Since our
+        school doesn’t have a football team, we created this program to give kids
+        ages 8–11 (flexible based on interest) a chance to be active, have fun, and
+        learn the game in a positive environment.
+      </p>
+      <p>
+        This is a co-ed flag football team with minimal contact and a strong focus
+        on safety, learning, and enjoyment.
+      </p>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="card">
+      <h2>Program Overview</h2>
+      <ul>
+        <li>Age group: 8–11 (flexible)</li>
+        <li>Co-ed flag football</li>
+        <li>Practices begin Fall 2026</li>
+        <li>Target Spring 2027 8-week league</li>
+        <li>Primary location: Suwanee area</li>
+      </ul>
+
+      <h2>Our Priorities</h2>
+      <ol>
+        <li>Safety</li>
+        <li>Fun</li>
+        <li>Winning</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="safety">
+    <div class="card">
+      <h2>Safety First</h2>
+      <div class="grid">
+        <div>
+          <h3>Flag Football</h3>
+          <p>No tackling, blocking, or heavy contact.</p>
+        </div>
+        <div>
+          <h3>Supervision</h3>
+          <p>Adult supervision will always be present.</p>
+        </div>
+        <div>
+          <h3>Positive Coaching</h3>
+          <p>Focus on encouragement, learning, and confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Is this competitive?</strong><br />
+        It will be structured, but development and fun are the priority.
+      </p>
+      <p><strong>Do kids need experience?</strong><br />
+        No experience required. Beginners are welcome.
+      </p>
+      <p><strong>Is this affiliated with a school?</strong><br />
+        No. This is an independent, student-led community program.
+      </p>
+    </div>
+  </section>
+
+  <section id="interest">
+    <div class="card">
+      <img src="interested.png" alt="Interested Icon" class="section-image">
+      <h2>Interest Form</h2>
+      <p>
+        If this sounds like something your child would enjoy, please fill out
+        our interest form so we can gauge participation and plan next steps.
+      </p>
+      <div class="cta">
+        <a href="https://forms.gle/Hq6zq9Qx7jVHwNRT6" target="_blank">Fill Out Interest Form</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Suwanee Stingrays Flag Football • Student-Led Community Program</p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+      Not affiliated with or endorsed by the Gwinnett School of Mathematics, Science, and Technology (GSMST).
+    </p>
+  </footer>
+</body>
+</html>
